@@ -1,0 +1,19 @@
+---
+title: "Question 1"
+output:
+  html_document:
+    df_print: paged
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+data <- cars
+#convert distance in km to metres
+data$dist_metres <- data$dist * 1000
+summary(data)
+```
+
+
