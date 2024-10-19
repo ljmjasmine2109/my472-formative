@@ -17,3 +17,11 @@ summary(data)
 ```
 
 
+```{r}
+#convert distance in km to metres
+data$dist_cm <- data$dist_metres * 100
+#rename
+data_new <- data
+rm(data)
+```
+
